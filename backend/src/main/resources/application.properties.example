@@ -73,3 +73,13 @@ spring.mail.properties.mail.smtp.starttls.enable=true
 
 # Admin Email Configuration
 app.admin.email=${ADMIN_EMAIL:admin@sneakerhub.com}
+
+
+# Admin Email Configuration
+app.admin.email=${ADMIN_EMAIL:admin@sneakerhub.com}
+
+# Admin Email Configuration
+app.admin.email=${ADMIN_EMAIL:admin@sneakerhub.com}
+
+# Admin Email Configuration
+app.admin.email=${ADMIN_EMAIL:admin@sneakerhub.com}
