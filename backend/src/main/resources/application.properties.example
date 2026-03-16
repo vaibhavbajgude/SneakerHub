@@ -83,3 +83,7 @@ app.admin.email=${ADMIN_EMAIL:admin@sneakerhub.com}
 
 # Admin Email Configuration
 app.admin.email=${ADMIN_EMAIL:admin@sneakerhub.com}
+
+
+# Admin Email Configuration
+app.admin.email=${ADMIN_EMAIL:admin@sneakerhub.com}
