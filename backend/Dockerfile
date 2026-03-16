@@ -1,31 +1,23 @@
-# ---------- Stage 1: Build the application ----------
+# -------- Build Stage --------
 FROM maven:3.9.9-eclipse-temurin-21 AS builder
-
 WORKDIR /app
 
-# Copy pom.xml first for dependency caching
 COPY pom.xml .
+RUN mvn -B -q -e -DskipTests dependency:go-offline
 
-# Download dependencies
-RUN mvn dependency:go-offline
-
-# Copy source code
 COPY src ./src
-
-# Build the application
 RUN mvn clean package -DskipTests
 
-
-# ---------- Stage 2: Run the application ----------
+# -------- Run Stage --------
 FROM eclipse-temurin:21-jdk-jammy
 
 WORKDIR /app
 
-# Copy the built jar from builder stage
 COPY --from=builder /app/target/*.jar app.jar
 
-# Expose Spring Boot port
+# Render expects the app to listen on $PORT
+ENV PORT=8080
+
 EXPOSE 8080
 
-# Run the Spring Boot app
 ENTRYPOINT ["java","-jar","app.jar"]
