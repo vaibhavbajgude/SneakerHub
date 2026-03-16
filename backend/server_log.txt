@@ -1,0 +1,864 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.sneakerhub:sneakerhub-backend >------------------
+[INFO] Building SneakerHub Backend 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.2:run (default-cli) > test-compile @ sneakerhub-backend >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ sneakerhub-backend ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ sneakerhub-backend ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ sneakerhub-backend ---
+[INFO] skip non existing resourceDirectory C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ sneakerhub-backend ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< spring-boot:3.2.2:run (default-cli) < test-compile @ sneakerhub-backend <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.2.2:run (default-cli) @ sneakerhub-backend ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-09T22:26:57.380+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Starting SneakerHubApplication using Java 23.0.2 with PID 14552 (C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\target\classes started by vaibh in C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend)
+2026-02-09T22:26:57.381+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-09T22:26:57.381+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T22:26:57.472+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-02-09T22:26:57.472+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-02-09T22:26:58.489+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T22:26:58.585+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 10 JPA repository interfaces.
+2026-02-09T22:26:59.215+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T22:26:59.227+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T22:26:59.228+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-09T22:26:59.293+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T22:26:59.293+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1821 ms
+2026-02-09T22:26:59.635+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09T22:26:59.719+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-02-09T22:26:59.759+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-09T22:26:59.988+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09T22:27:00.023+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-09T22:27:00.193+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ba1dd8e
+2026-02-09T22:27:00.194+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-09T22:27:00.247+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-09T22:27:01.655+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09T22:27:01.815+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:27:02.248+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] c.s.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-09T22:27:02.470+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-09T22:27:03.817+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09T22:27:04.276+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2186ebb1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@360a4c34, org.springframework.security.web.context.SecurityContextHolderFilter@2e28588, org.springframework.security.web.header.HeaderWriterFilter@34b039b7, org.springframework.web.filter.CorsFilter@2658ea23, org.springframework.web.filter.CorsFilter@6f193277, org.springframework.security.web.authentication.logout.LogoutFilter@6695be5e, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@27bc8e77, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@a534234, com.sneakerhub.security.JwtAuthenticationFilter@5304f56d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4f115ed7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@79549746, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4b507005, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4420c408, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1d5b1fb4, org.springframework.security.web.session.SessionManagementFilter@5e1d5bb4, org.springframework.security.web.access.ExceptionTranslationFilter@1aa353d5, org.springframework.security.web.access.intercept.AuthorizationFilter@7703bff9]
+2026-02-09T22:27:04.853+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T22:27:04.903+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-09T22:27:04.916+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Started SneakerHubApplication in 8.02 seconds (process running for 8.49)
+
+?????????????????????????????????????????????????????????
+?                                                       ?
+?     ? SneakerHub Backend Started Successfully! ?   ?
+?                                                       ?
+?     API: http://localhost:8080/api                    ?
+?     Swagger UI: http://localhost:8080/swagger-ui.html ?
+?                                                       ?
+?????????????????????????????????????????????????????????
+
+2026-02-09T22:28:06.376+05:30  INFO 14552 --- [sneakerhub-backend] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 29 class path changes (0 additions, 0 deletions, 29 modifications)
+2026-02-09T22:28:06.393+05:30  INFO 14552 --- [sneakerhub-backend] [       Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:28:06.397+05:30  INFO 14552 --- [sneakerhub-backend] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-09T22:28:06.408+05:30  INFO 14552 --- [sneakerhub-backend] [       Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-09T22:28:06.600+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Starting SneakerHubApplication using Java 23.0.2 with PID 14552 (C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\target\classes started by vaibh in C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend)
+2026-02-09T22:28:06.600+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-09T22:28:06.600+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T22:28:06.891+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T22:28:06.942+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 10 JPA repository interfaces.
+2026-02-09T22:28:07.083+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T22:28:07.084+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T22:28:07.084+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-09T22:28:07.102+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T22:28:07.102+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 499 ms
+2026-02-09T22:28:07.165+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09T22:28:07.171+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-09T22:28:07.177+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09T22:28:07.179+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-02-09T22:28:07.188+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@815f38d
+2026-02-09T22:28:07.188+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-02-09T22:28:07.189+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-09T22:28:07.492+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09T22:28:07.624+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:28:07.761+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] c.s.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-09T22:28:08.338+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09T22:28:08.578+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@81e20b6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32dab583, org.springframework.security.web.context.SecurityContextHolderFilter@1a8d496d, org.springframework.security.web.header.HeaderWriterFilter@566e5939, org.springframework.web.filter.CorsFilter@5b5380db, org.springframework.web.filter.CorsFilter@6dff3a7e, org.springframework.security.web.authentication.logout.LogoutFilter@3cbfa58c, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@7ea89acc, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@3ec11b74, com.sneakerhub.security.JwtAuthenticationFilter@68b1cca0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@74e849da, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@149dbce7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@423f5cd0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@66bc723f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@730c655a, org.springframework.security.web.session.SessionManagementFilter@510879d3, org.springframework.security.web.access.ExceptionTranslationFilter@2f8efc90, org.springframework.security.web.access.intercept.AuthorizationFilter@f073ddf]
+2026-02-09T22:28:08.903+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T22:28:08.922+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-09T22:28:08.928+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Started SneakerHubApplication in 2.364 seconds (process running for 72.502)
+2026-02-09T22:28:08.930+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+
+?????????????????????????????????????????????????????????
+?                                                       ?
+?     ? SneakerHub Backend Started Successfully! ?   ?
+?                                                       ?
+?     API: http://localhost:8080/api                    ?
+?     Swagger UI: http://localhost:8080/swagger-ui.html ?
+?                                                       ?
+?????????????????????????????????????????????????????????
+
+2026-02-09T22:29:07.494+05:30  INFO 14552 --- [sneakerhub-backend] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 7 class path changes (0 additions, 0 deletions, 7 modifications)
+2026-02-09T22:29:07.521+05:30  INFO 14552 --- [sneakerhub-backend] [       Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:07.523+05:30  INFO 14552 --- [sneakerhub-backend] [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-02-09T22:29:07.528+05:30  INFO 14552 --- [sneakerhub-backend] [       Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-09T22:29:07.640+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Starting SneakerHubApplication using Java 23.0.2 with PID 14552 (C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\target\classes started by vaibh in C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend)
+2026-02-09T22:29:07.640+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-09T22:29:07.640+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T22:29:07.894+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T22:29:07.924+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 10 JPA repository interfaces.
+2026-02-09T22:29:08.030+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T22:29:08.030+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T22:29:08.030+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-09T22:29:08.054+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T22:29:08.054+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 412 ms
+2026-02-09T22:29:08.093+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09T22:29:08.096+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-09T22:29:08.098+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09T22:29:08.098+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-02-09T22:29:08.106+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@aaaa3a2
+2026-02-09T22:29:08.106+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-02-09T22:29:08.106+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-09T22:29:08.340+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09T22:29:08.443+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:08.548+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] c.s.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-09T22:29:08.963+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09T22:29:09.167+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@23d408b0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@572c6765, org.springframework.security.web.context.SecurityContextHolderFilter@2a76be09, org.springframework.security.web.header.HeaderWriterFilter@7c487584, org.springframework.web.filter.CorsFilter@5c1e95f7, org.springframework.web.filter.CorsFilter@1af698f2, org.springframework.security.web.authentication.logout.LogoutFilter@6b80cded, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@653227c8, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@1ceb58ae, com.sneakerhub.security.JwtAuthenticationFilter@57d195be, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4c529483, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@19e49294, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@487e11bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7725b965, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d47c982, org.springframework.security.web.session.SessionManagementFilter@27f387ed, org.springframework.security.web.access.ExceptionTranslationFilter@1fefa0bc, org.springframework.security.web.access.intercept.AuthorizationFilter@699ac340]
+2026-02-09T22:29:09.481+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T22:29:09.501+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-09T22:29:09.506+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Started SneakerHubApplication in 1.895 seconds (process running for 133.08)
+2026-02-09T22:29:09.508+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+
+?????????????????????????????????????????????????????????
+?                                                       ?
+?     ? SneakerHub Backend Started Successfully! ?   ?
+?                                                       ?
+?     API: http://localhost:8080/api                    ?
+?     Swagger UI: http://localhost:8080/swagger-ui.html ?
+?                                                       ?
+?????????????????????????????????????????????????????????
+
+2026-02-09T22:29:13.034+05:30  INFO 14552 --- [sneakerhub-backend] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-02-09T22:29:13.040+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:13.043+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-02-09T22:29:13.043+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-09T22:29:13.132+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Starting SneakerHubApplication using Java 23.0.2 with PID 14552 (C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\target\classes started by vaibh in C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend)
+2026-02-09T22:29:13.132+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-09T22:29:13.132+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T22:29:13.321+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T22:29:13.343+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 10 JPA repository interfaces.
+2026-02-09T22:29:13.440+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T22:29:13.440+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T22:29:13.440+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-09T22:29:13.480+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T22:29:13.480+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 348 ms
+2026-02-09T22:29:13.517+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09T22:29:13.517+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-09T22:29:13.524+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09T22:29:13.524+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-02-09T22:29:13.529+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3de3a387
+2026-02-09T22:29:13.529+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-02-09T22:29:13.529+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-09T22:29:13.736+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09T22:29:13.806+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:13.918+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] c.s.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-09T22:29:14.259+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09T22:29:14.360+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a048f36, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27c88d16, org.springframework.security.web.context.SecurityContextHolderFilter@6562bd43, org.springframework.security.web.header.HeaderWriterFilter@312cfc90, org.springframework.web.filter.CorsFilter@2db48364, org.springframework.web.filter.CorsFilter@5725d78d, org.springframework.security.web.authentication.logout.LogoutFilter@acc80ad, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@4af2fc7c, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@3af81265, com.sneakerhub.security.JwtAuthenticationFilter@a90e29f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@286f19cd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@9068f60, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@719463aa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@278ad974, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a45036b, org.springframework.security.web.session.SessionManagementFilter@43998e76, org.springframework.security.web.access.ExceptionTranslationFilter@18219875, org.springframework.security.web.access.intercept.AuthorizationFilter@2b0d762a]
+2026-02-09T22:29:14.543+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T22:29:14.556+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-09T22:29:14.565+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Started SneakerHubApplication in 1.466 seconds (process running for 138.14)
+2026-02-09T22:29:14.569+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+
+?????????????????????????????????????????????????????????
+?                                                       ?
+?     ? SneakerHub Backend Started Successfully! ?   ?
+?                                                       ?
+?     API: http://localhost:8080/api                    ?
+?     Swagger UI: http://localhost:8080/swagger-ui.html ?
+?                                                       ?
+?????????????????????????????????????????????????????????
+
+2026-02-09T22:29:20.174+05:30  INFO 14552 --- [sneakerhub-backend] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-02-09T22:29:20.185+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:20.187+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-02-09T22:29:20.190+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-09T22:29:20.276+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Starting SneakerHubApplication using Java 23.0.2 with PID 14552 (C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\target\classes started by vaibh in C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend)
+2026-02-09T22:29:20.276+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-09T22:29:20.276+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T22:29:20.484+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T22:29:20.531+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 10 JPA repository interfaces.
+2026-02-09T22:29:20.723+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T22:29:20.724+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T22:29:20.724+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-09T22:29:20.746+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T22:29:20.746+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 468 ms
+2026-02-09T22:29:20.812+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09T22:29:20.813+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-09T22:29:20.818+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09T22:29:20.818+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2026-02-09T22:29:20.825+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5ad0e09a
+2026-02-09T22:29:20.825+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2026-02-09T22:29:20.827+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-09T22:29:21.014+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09T22:29:21.104+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:21.184+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] c.s.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-09T22:29:21.710+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09T22:29:21.914+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44988516, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9ec1a50, org.springframework.security.web.context.SecurityContextHolderFilter@4301b521, org.springframework.security.web.header.HeaderWriterFilter@1a99beaf, org.springframework.web.filter.CorsFilter@4e27e6b3, org.springframework.web.filter.CorsFilter@c26f239, org.springframework.security.web.authentication.logout.LogoutFilter@17cc5ed3, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@1a0ae66b, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@78375e90, com.sneakerhub.security.JwtAuthenticationFilter@68bba047, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2086ecd0, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@c96669e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c0cbb38, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b3712d0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6541d3c6, org.springframework.security.web.session.SessionManagementFilter@4cf4f5cb, org.springframework.security.web.access.ExceptionTranslationFilter@46b33c2d, org.springframework.security.web.access.intercept.AuthorizationFilter@73e9ff47]
+2026-02-09T22:29:22.064+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T22:29:22.093+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-09T22:29:22.100+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Started SneakerHubApplication in 1.846 seconds (process running for 145.675)
+2026-02-09T22:29:22.100+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+
+?????????????????????????????????????????????????????????
+?                                                       ?
+?     ? SneakerHub Backend Started Successfully! ?   ?
+?                                                       ?
+?     API: http://localhost:8080/api                    ?
+?     Swagger UI: http://localhost:8080/swagger-ui.html ?
+?                                                       ?
+?????????????????????????????????????????????????????????
+
+2026-02-09T22:29:25.624+05:30  INFO 14552 --- [sneakerhub-backend] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-02-09T22:29:25.632+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:25.634+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2026-02-09T22:29:25.650+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-09T22:29:25.773+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Starting SneakerHubApplication using Java 23.0.2 with PID 14552 (C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\target\classes started by vaibh in C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend)
+2026-02-09T22:29:25.773+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-09T22:29:25.774+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T22:29:26.022+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T22:29:26.048+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 10 JPA repository interfaces.
+2026-02-09T22:29:26.143+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T22:29:26.143+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T22:29:26.143+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-09T22:29:26.182+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T22:29:26.182+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 407 ms
+2026-02-09T22:29:26.256+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09T22:29:26.262+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-09T22:29:26.268+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09T22:29:26.269+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2026-02-09T22:29:26.277+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56de744f
+2026-02-09T22:29:26.277+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2026-02-09T22:29:26.278+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-09T22:29:26.556+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09T22:29:26.713+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:26.789+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] c.s.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-09T22:29:27.089+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09T22:29:27.206+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e0b324, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c983eae, org.springframework.security.web.context.SecurityContextHolderFilter@7502a1d3, org.springframework.security.web.header.HeaderWriterFilter@58e90eb, org.springframework.web.filter.CorsFilter@4169606d, org.springframework.web.filter.CorsFilter@407e3f99, org.springframework.security.web.authentication.logout.LogoutFilter@626bd7e, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@311d67f9, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@719e0118, com.sneakerhub.security.JwtAuthenticationFilter@46f6f4a4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@67d07503, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4304cd21, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@42486a70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3330b31a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ef4f6a1, org.springframework.security.web.session.SessionManagementFilter@55d03c9b, org.springframework.security.web.access.ExceptionTranslationFilter@50fce03b, org.springframework.security.web.access.intercept.AuthorizationFilter@542465ba]
+2026-02-09T22:29:27.395+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T22:29:27.407+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-09T22:29:27.410+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Started SneakerHubApplication in 1.665 seconds (process running for 150.986)
+2026-02-09T22:29:27.410+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+
+?????????????????????????????????????????????????????????
+?                                                       ?
+?     ? SneakerHub Backend Started Successfully! ?   ?
+?                                                       ?
+?     API: http://localhost:8080/api                    ?
+?     Swagger UI: http://localhost:8080/swagger-ui.html ?
+?                                                       ?
+?????????????????????????????????????????????????????????
+
+2026-02-09T22:29:36.151+05:30  INFO 14552 --- [sneakerhub-backend] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-02-09T22:29:36.158+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:36.161+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2026-02-09T22:29:36.167+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-09T22:29:36.249+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Starting SneakerHubApplication using Java 23.0.2 with PID 14552 (C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\target\classes started by vaibh in C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend)
+2026-02-09T22:29:36.249+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-09T22:29:36.249+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T22:29:36.490+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T22:29:36.535+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43 ms. Found 10 JPA repository interfaces.
+2026-02-09T22:29:36.669+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T22:29:36.670+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T22:29:36.670+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-09T22:29:36.697+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T22:29:36.698+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 449 ms
+2026-02-09T22:29:36.767+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09T22:29:36.768+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-09T22:29:36.772+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09T22:29:36.772+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2026-02-09T22:29:36.798+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a72cf5d
+2026-02-09T22:29:36.799+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2026-02-09T22:29:36.801+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-09T22:29:37.065+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09T22:29:37.167+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:37.243+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] c.s.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-09T22:29:37.565+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09T22:29:37.684+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@435b02aa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57cf7741, org.springframework.security.web.context.SecurityContextHolderFilter@379cf2bd, org.springframework.security.web.header.HeaderWriterFilter@ee22c96, org.springframework.web.filter.CorsFilter@7bc4d309, org.springframework.web.filter.CorsFilter@78bdef3, org.springframework.security.web.authentication.logout.LogoutFilter@3ec59252, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@48ab856d, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@dfe39a3, com.sneakerhub.security.JwtAuthenticationFilter@8086ad5, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@57495a8b, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1cded2fa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e82fdc8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@319bf212, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3007cb5f, org.springframework.security.web.session.SessionManagementFilter@4ee51a30, org.springframework.security.web.access.ExceptionTranslationFilter@7f3de98, org.springframework.security.web.access.intercept.AuthorizationFilter@4d207977]
+2026-02-09T22:29:37.849+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T22:29:37.853+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-09T22:29:37.860+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Started SneakerHubApplication in 1.632 seconds (process running for 161.435)
+2026-02-09T22:29:37.862+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+
+?????????????????????????????????????????????????????????
+?                                                       ?
+?     ? SneakerHub Backend Started Successfully! ?   ?
+?                                                       ?
+?     API: http://localhost:8080/api                    ?
+?     Swagger UI: http://localhost:8080/swagger-ui.html ?
+?                                                       ?
+?????????????????????????????????????????????????????????
+
+2026-02-09T22:29:42.509+05:30  INFO 14552 --- [sneakerhub-backend] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-02-09T22:29:42.627+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:42.629+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2026-02-09T22:29:42.681+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-09T22:29:42.807+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Starting SneakerHubApplication using Java 23.0.2 with PID 14552 (C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\target\classes started by vaibh in C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend)
+2026-02-09T22:29:42.807+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-09T22:29:42.807+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T22:29:43.279+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T22:29:43.304+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24 ms. Found 10 JPA repository interfaces.
+2026-02-09T22:29:43.526+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T22:29:43.528+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T22:29:43.528+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-09T22:29:43.559+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T22:29:43.559+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 750 ms
+2026-02-09T22:29:43.611+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09T22:29:43.617+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-09T22:29:43.621+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09T22:29:43.624+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2026-02-09T22:29:43.632+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10af904e
+2026-02-09T22:29:43.632+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2026-02-09T22:29:43.635+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-09T22:29:43.893+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09T22:29:43.978+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:44.061+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] c.s.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-09T22:29:44.367+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09T22:29:44.512+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b2295dd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@118fc88e, org.springframework.security.web.context.SecurityContextHolderFilter@93a0c76, org.springframework.security.web.header.HeaderWriterFilter@18b5f44f, org.springframework.web.filter.CorsFilter@5d489c5b, org.springframework.web.filter.CorsFilter@117f8230, org.springframework.security.web.authentication.logout.LogoutFilter@429f1d5f, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@66ed995e, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@188a8e2c, com.sneakerhub.security.JwtAuthenticationFilter@344b9b0a, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@52cc8887, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1e7c61bf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ed0f953, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79707b4a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71d81146, org.springframework.security.web.session.SessionManagementFilter@72cb2b88, org.springframework.security.web.access.ExceptionTranslationFilter@7f27114b, org.springframework.security.web.access.intercept.AuthorizationFilter@e71bb43]
+2026-02-09T22:29:44.693+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T22:29:44.709+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-09T22:29:44.716+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Started SneakerHubApplication in 1.956 seconds (process running for 168.29)
+2026-02-09T22:29:44.717+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+
+?????????????????????????????????????????????????????????
+?                                                       ?
+?     ? SneakerHub Backend Started Successfully! ?   ?
+?                                                       ?
+?     API: http://localhost:8080/api                    ?
+?     Swagger UI: http://localhost:8080/swagger-ui.html ?
+?                                                       ?
+?????????????????????????????????????????????????????????
+
+2026-02-09T22:29:50.307+05:30  INFO 14552 --- [sneakerhub-backend] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-02-09T22:29:50.315+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:50.316+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2026-02-09T22:29:50.320+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-09T22:29:50.401+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Starting SneakerHubApplication using Java 23.0.2 with PID 14552 (C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\target\classes started by vaibh in C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend)
+2026-02-09T22:29:50.402+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-09T22:29:50.402+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T22:29:50.619+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T22:29:50.648+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 10 JPA repository interfaces.
+2026-02-09T22:29:50.797+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T22:29:50.798+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T22:29:50.798+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-09T22:29:50.821+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T22:29:50.821+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 417 ms
+2026-02-09T22:29:50.890+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09T22:29:50.893+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-09T22:29:50.894+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09T22:29:50.894+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2026-02-09T22:29:50.901+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-9 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7c90d25d
+2026-02-09T22:29:50.901+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2026-02-09T22:29:50.903+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-09T22:29:51.085+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09T22:29:51.155+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:51.250+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] c.s.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-09T22:29:51.527+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09T22:29:51.626+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@76079289, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cf6ebf6, org.springframework.security.web.context.SecurityContextHolderFilter@662c5660, org.springframework.security.web.header.HeaderWriterFilter@1666a72b, org.springframework.web.filter.CorsFilter@416467c9, org.springframework.web.filter.CorsFilter@328c795, org.springframework.security.web.authentication.logout.LogoutFilter@2f32b732, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5bdf4d3, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@263c9656, com.sneakerhub.security.JwtAuthenticationFilter@5b6cc8ba, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1d12b848, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@49f19ea3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d556b14, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ea9c86a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62737530, org.springframework.security.web.session.SessionManagementFilter@2660bf08, org.springframework.security.web.access.ExceptionTranslationFilter@a1e2382, org.springframework.security.web.access.intercept.AuthorizationFilter@57f0f373]
+2026-02-09T22:29:51.790+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T22:29:51.809+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-09T22:29:51.815+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Started SneakerHubApplication in 1.438 seconds (process running for 175.39)
+2026-02-09T22:29:51.821+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+
+?????????????????????????????????????????????????????????
+?                                                       ?
+?     ? SneakerHub Backend Started Successfully! ?   ?
+?                                                       ?
+?     API: http://localhost:8080/api                    ?
+?     Swagger UI: http://localhost:8080/swagger-ui.html ?
+?                                                       ?
+?????????????????????????????????????????????????????????
+
+2026-02-09T22:29:55.364+05:30  INFO 14552 --- [sneakerhub-backend] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-02-09T22:29:55.374+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:55.374+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2026-02-09T22:29:55.383+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-09T22:29:55.512+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Starting SneakerHubApplication using Java 23.0.2 with PID 14552 (C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\target\classes started by vaibh in C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend)
+2026-02-09T22:29:55.512+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-09T22:29:55.512+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T22:29:55.711+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T22:29:55.765+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 10 JPA repository interfaces.
+2026-02-09T22:29:55.974+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T22:29:55.976+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T22:29:55.976+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-09T22:29:56.010+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T22:29:56.010+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 492 ms
+2026-02-09T22:29:56.095+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09T22:29:56.095+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-09T22:29:56.100+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09T22:29:56.100+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2026-02-09T22:29:56.103+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-10 - Added connection com.mysql.cj.jdbc.ConnectionImpl@45a791f7
+2026-02-09T22:29:56.103+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2026-02-09T22:29:56.103+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-09T22:29:56.285+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09T22:29:56.365+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:29:56.445+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] c.s.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-09T22:29:56.831+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09T22:29:56.978+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@a26bb38, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4945e080, org.springframework.security.web.context.SecurityContextHolderFilter@254b278c, org.springframework.security.web.header.HeaderWriterFilter@79403e01, org.springframework.web.filter.CorsFilter@2897b2aa, org.springframework.web.filter.CorsFilter@2d7ca912, org.springframework.security.web.authentication.logout.LogoutFilter@44982329, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@45f0ca06, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@606cb04a, com.sneakerhub.security.JwtAuthenticationFilter@b70e6f2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@201fb41d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@12bc38fe, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@29f62c42, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@513ebf4b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@741b8bc9, org.springframework.security.web.session.SessionManagementFilter@1bdd41b0, org.springframework.security.web.access.ExceptionTranslationFilter@1383f659, org.springframework.security.web.access.intercept.AuthorizationFilter@3d1ae758]
+2026-02-09T22:29:57.169+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T22:29:57.180+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-09T22:29:57.186+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Started SneakerHubApplication in 1.698 seconds (process running for 180.761)
+2026-02-09T22:29:57.186+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+
+?????????????????????????????????????????????????????????
+?                                                       ?
+?     ? SneakerHub Backend Started Successfully! ?   ?
+?                                                       ?
+?     API: http://localhost:8080/api                    ?
+?     Swagger UI: http://localhost:8080/swagger-ui.html ?
+?                                                       ?
+?????????????????????????????????????????????????????????
+
+2026-02-09T22:30:05.975+05:30  INFO 14552 --- [sneakerhub-backend] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2026-02-09T22:30:05.990+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:30:05.993+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2026-02-09T22:30:05.998+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-09T22:30:06.080+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Starting SneakerHubApplication using Java 23.0.2 with PID 14552 (C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\target\classes started by vaibh in C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend)
+2026-02-09T22:30:06.080+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-09T22:30:06.080+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T22:30:06.295+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T22:30:06.321+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 10 JPA repository interfaces.
+2026-02-09T22:30:06.476+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T22:30:06.478+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T22:30:06.478+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-09T22:30:06.507+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T22:30:06.507+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 424 ms
+2026-02-09T22:30:06.584+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09T22:30:06.588+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-09T22:30:06.594+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09T22:30:06.596+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2026-02-09T22:30:06.603+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-11 - Added connection com.mysql.cj.jdbc.ConnectionImpl@112c2249
+2026-02-09T22:30:06.604+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2026-02-09T22:30:06.606+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-09T22:30:06.895+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09T22:30:07.049+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:30:07.143+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] c.s.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-09T22:30:07.580+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09T22:30:07.703+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@54f63b7a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e806101, org.springframework.security.web.context.SecurityContextHolderFilter@55dce154, org.springframework.security.web.header.HeaderWriterFilter@23dc0ab0, org.springframework.web.filter.CorsFilter@203265ef, org.springframework.web.filter.CorsFilter@7e16d1eb, org.springframework.security.web.authentication.logout.LogoutFilter@646f63ac, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@507f5479, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@1ea80a48, com.sneakerhub.security.JwtAuthenticationFilter@7bddd21b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@67afc0c7, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1b5e08b8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59ed1f05, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1aa70702, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66abfabb, org.springframework.security.web.session.SessionManagementFilter@3c7831a0, org.springframework.security.web.access.ExceptionTranslationFilter@e3051a3, org.springframework.security.web.access.intercept.AuthorizationFilter@5fe2bed1]
+2026-02-09T22:30:07.870+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T22:30:07.879+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-09T22:30:07.881+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Started SneakerHubApplication in 1.822 seconds (process running for 191.458)
+2026-02-09T22:30:07.885+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+
+?????????????????????????????????????????????????????????
+?                                                       ?
+?     ? SneakerHub Backend Started Successfully! ?   ?
+?                                                       ?
+?     API: http://localhost:8080/api                    ?
+?     Swagger UI: http://localhost:8080/swagger-ui.html ?
+?                                                       ?
+?????????????????????????????????????????????????????????
+
+2026-02-09T22:30:12.459+05:30  INFO 14552 --- [sneakerhub-backend] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2026-02-09T22:30:12.484+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:30:12.489+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2026-02-09T22:30:12.507+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-09T22:30:12.635+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Starting SneakerHubApplication using Java 23.0.2 with PID 14552 (C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\target\classes started by vaibh in C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend)
+2026-02-09T22:30:12.635+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-09T22:30:12.635+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T22:30:13.024+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T22:30:13.080+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56 ms. Found 10 JPA repository interfaces.
+2026-02-09T22:30:13.214+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T22:30:13.216+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T22:30:13.216+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-09T22:30:13.235+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T22:30:13.235+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 599 ms
+2026-02-09T22:30:13.287+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09T22:30:13.291+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-09T22:30:13.293+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09T22:30:13.293+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2026-02-09T22:30:13.299+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-12 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c09faa7
+2026-02-09T22:30:13.299+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2026-02-09T22:30:13.299+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-09T22:30:13.576+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09T22:30:13.654+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:30:13.726+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] c.s.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-09T22:30:13.999+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09T22:30:14.091+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@47e62333, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4848930, org.springframework.security.web.context.SecurityContextHolderFilter@402dda2d, org.springframework.security.web.header.HeaderWriterFilter@54270a52, org.springframework.web.filter.CorsFilter@6e96f06a, org.springframework.web.filter.CorsFilter@6894b294, org.springframework.security.web.authentication.logout.LogoutFilter@5ca28ccc, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@14baf36c, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@5d9b63f7, com.sneakerhub.security.JwtAuthenticationFilter@63f424b9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@25f391d5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1e9dfb0e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6046e25e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c5f019e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ef02ce4, org.springframework.security.web.session.SessionManagementFilter@10a73454, org.springframework.security.web.access.ExceptionTranslationFilter@18d7039d, org.springframework.security.web.access.intercept.AuthorizationFilter@114174db]
+2026-02-09T22:30:14.228+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T22:30:14.242+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-09T22:30:14.245+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Started SneakerHubApplication in 1.636 seconds (process running for 197.819)
+2026-02-09T22:30:14.245+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+
+?????????????????????????????????????????????????????????
+?                                                       ?
+?     ? SneakerHub Backend Started Successfully! ?   ?
+?                                                       ?
+?     API: http://localhost:8080/api                    ?
+?     Swagger UI: http://localhost:8080/swagger-ui.html ?
+?                                                       ?
+?????????????????????????????????????????????????????????
+
+2026-02-09T22:31:58.512+05:30  INFO 14552 --- [sneakerhub-backend] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 103 class path changes (0 additions, 101 deletions, 2 modifications)
+2026-02-09T22:31:58.521+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:31:58.524+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2026-02-09T22:31:58.526+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-09T22:31:58.621+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Starting SneakerHubApplication using Java 23.0.2 with PID 14552 (C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\target\classes started by vaibh in C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend)
+2026-02-09T22:31:58.621+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-09T22:31:58.621+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T22:31:58.849+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T22:31:58.849+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2026-02-09T22:31:58.963+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T22:31:58.963+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T22:31:58.963+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-09T22:31:58.991+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T22:31:58.991+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 367 ms
+2026-02-09T22:31:59.113+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09T22:31:59.113+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-09T22:31:59.121+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09T22:31:59.124+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2026-02-09T22:31:59.185+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-13 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d6bf2b2
+2026-02-09T22:31:59.185+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2026-02-09T22:31:59.185+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-09T22:31:59.200+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09T22:31:59.200+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:31:59.240+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09T22:31:59.435+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2026-02-09T22:31:59.493+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@536e36df, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d62cdfc, org.springframework.security.web.context.SecurityContextHolderFilter@1d852ceb, org.springframework.security.web.header.HeaderWriterFilter@9e194c2, org.springframework.web.filter.CorsFilter@688939d7, org.springframework.security.web.csrf.CsrfFilter@5ff3fb30, org.springframework.security.web.authentication.logout.LogoutFilter@a4ae3d7, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5dbcbed5, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@1f2d14f5, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@4e840a9b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1825923c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5c178117, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d6f6e10, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d6752d6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e6d8c84, org.springframework.security.oauth2.client.web.OAuth2AuthorizationCodeGrantFilter@1354ffde, org.springframework.security.web.access.ExceptionTranslationFilter@46b0df14, org.springframework.security.web.access.intercept.AuthorizationFilter@42c26751]
+2026-02-09T22:31:59.510+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T22:31:59.524+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-09T22:31:59.528+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Started SneakerHubApplication in 0.935 seconds (process running for 303.105)
+2026-02-09T22:31:59.535+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+
+?????????????????????????????????????????????????????????
+?                                                       ?
+?     ? SneakerHub Backend Started Successfully! ?   ?
+?                                                       ?
+?     API: http://localhost:8080/api                    ?
+?     Swagger UI: http://localhost:8080/swagger-ui.html ?
+?                                                       ?
+?????????????????????????????????????????????????????????
+
+2026-02-09T22:32:06.209+05:30  INFO 14552 --- [sneakerhub-backend] [   File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 101 class path changes (101 additions, 0 deletions, 0 modifications)
+2026-02-09T22:32:06.225+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:32:06.228+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2026-02-09T22:32:06.243+05:30  INFO 14552 --- [sneakerhub-backend] [      Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2026-02-09T22:32:06.367+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Starting SneakerHubApplication using Java 23.0.2 with PID 14552 (C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend\target\classes started by vaibh in C:\Users\vaibh\OneDrive\Desktop\SNEAKERS\backend)
+2026-02-09T22:32:06.368+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Running with Spring Boot v3.2.2, Spring v6.1.3
+2026-02-09T22:32:06.368+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-02-09T22:32:06.782+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-09T22:32:06.830+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 10 JPA repository interfaces.
+2026-02-09T22:32:07.055+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-02-09T22:32:07.058+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-09T22:32:07.058+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.18]
+2026-02-09T22:32:07.093+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-09T22:32:07.093+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 720 ms
+2026-02-09T22:32:07.185+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-09T22:32:07.192+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-09T22:32:07.205+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-09T22:32:07.207+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2026-02-09T22:32:07.221+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-14 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a2d6d8a
+2026-02-09T22:32:07.221+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2026-02-09T22:32:07.224+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-09T22:32:07.731+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-09T22:32:07.905+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-09T22:32:08.116+05:30 DEBUG 14552 --- [sneakerhub-backend] [  restartedMain] c.s.security.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-02-09T22:32:08.791+05:30  WARN 14552 --- [sneakerhub-backend] [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-09T22:32:09.132+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@488b70e8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6a127e56, org.springframework.security.web.context.SecurityContextHolderFilter@32fa8a4a, org.springframework.security.web.header.HeaderWriterFilter@374cd66, org.springframework.web.filter.CorsFilter@47fede58, org.springframework.web.filter.CorsFilter@176a63df, org.springframework.security.web.authentication.logout.LogoutFilter@73c0d159, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@5f1fa493, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@11082999, com.sneakerhub.security.JwtAuthenticationFilter@ad4c7f7, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5ef9be90, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4755dea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6515d52d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40af3b14, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7dec73fc, org.springframework.security.web.session.SessionManagementFilter@2d6675c4, org.springframework.security.web.access.ExceptionTranslationFilter@66f629d9, org.springframework.security.web.access.intercept.AuthorizationFilter@59901941]
+2026-02-09T22:32:09.343+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-02-09T22:32:09.363+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2026-02-09T22:32:09.367+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] com.sneakerhub.SneakerHubApplication     : Started SneakerHubApplication in 3.035 seconds (process running for 312.942)
+2026-02-09T22:32:09.371+05:30  INFO 14552 --- [sneakerhub-backend] [  restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+    None
+
+
+Negative matches:
+-----------------
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' filterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration:
+      Did not match:
+         - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) found beans named springSecurityFilterChain (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+
+?????????????????????????????????????????????????????????
+?                                                       ?
+?     ? SneakerHub Backend Started Successfully! ?   ?
+?                                                       ?
+?     API: http://localhost:8080/api                    ?
+?     Swagger UI: http://localhost:8080/swagger-ui.html ?
+?                                                       ?
+?????????????????????????????????????????????????????????
+
+2026-02-09T22:34:50.777+05:30  INFO 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-09T22:34:50.781+05:30  INFO 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-09T22:34:50.785+05:30  INFO 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2026-02-09T22:34:50.854+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /api
+2026-02-09T22:34:50.878+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:34:50.890+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], Not [And [Or [Ant [pattern='/login'], Ant [pattern='/favicon.ico']], And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@75d0a2a4, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]]], org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2LoginConfigurer$$Lambda/0x000001f101af0460@679f854e]
+2026-02-09T22:34:50.893+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-1] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@d44a2b2
+2026-02-09T22:34:50.893+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/oauth2/authorize/google
+2026-02-09T22:34:50.914+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api
+2026-02-09T22:34:50.914+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:34:50.915+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-2] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], Not [And [Or [Ant [pattern='/login'], Ant [pattern='/favicon.ico']], And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@75d0a2a4, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]]], org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2LoginConfigurer$$Lambda/0x000001f101af0460@679f854e]
+2026-02-09T22:34:50.915+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-2] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@d44a2b2
+2026-02-09T22:34:50.915+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-2] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/oauth2/authorize/google
+2026-02-09T22:34:50.931+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /oauth2/authorize/google
+2026-02-09T22:34:51.009+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-3] o.s.s.web.DefaultRedirectStrategy        : Redirecting to https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=your-google-client-id&scope=email%20profile&state=pcnx6wB6HziHZyURGisMIeoM6M6OA3gK-GW0Uztx4jw%3D&redirect_uri=http://localhost:8080/oauth2/callback/google
+2026-02-09T22:34:51.018+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /oauth2/authorize/google
+2026-02-09T22:34:51.022+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-4] o.s.s.web.DefaultRedirectStrategy        : Redirecting to https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=your-google-client-id&scope=email%20profile&state=lXbK7a2QAS7zzASEPkEZs_0o2ee5f24V5hca346EQXE%3D&redirect_uri=http://localhost:8080/oauth2/callback/google
+2026-02-09T22:35:07.361+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui.html
+2026-02-09T22:35:07.363+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:07.366+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui.html
+2026-02-09T22:35:09.634+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui.html
+2026-02-09T22:35:09.640+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:09.642+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui.html
+2026-02-09T22:35:09.645+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.html
+2026-02-09T22:35:09.645+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:09.647+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.html
+2026-02-09T22:35:09.729+05:30 DEBUG 14552 --- [sneakerhub-backend] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.html
+2026-02-09T22:35:09.729+05:30 DEBUG 14552 --- [sneakerhub-backend] [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:09.733+05:30 DEBUG 14552 --- [sneakerhub-backend] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.html
+2026-02-09T22:35:09.789+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui.css
+2026-02-09T22:35:09.791+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:09.791+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui.css
+2026-02-09T22:35:09.914+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.css
+2026-02-09T22:35:10.015+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-bundle.js
+2026-02-09T22:35:10.015+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-02-09T22:35:10.015+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:10.015+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:10.015+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-02-09T22:35:10.017+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-bundle.js
+2026-02-09T22:35:10.025+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-initializer.js
+2026-02-09T22:35:10.027+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:10.041+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-initializer.js
+2026-02-09T22:35:10.048+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:10.049+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.css
+2026-02-09T22:35:10.219+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui.css
+2026-02-09T22:35:10.221+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:10.221+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui.css
+2026-02-09T22:35:10.221+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-bundle.js
+2026-02-09T22:35:10.223+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:10.224+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-bundle.js
+2026-02-09T22:35:10.227+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.css
+2026-02-09T22:35:10.227+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:10.227+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.css
+2026-02-09T22:35:10.362+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-02-09T22:35:10.369+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:10.370+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2026-02-09T22:35:11.637+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/favicon-32x32.png
+2026-02-09T22:35:11.637+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:11.637+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/favicon-32x32.png
+2026-02-09T22:35:11.639+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-initializer.js
+2026-02-09T22:35:11.639+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:11.639+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-initializer.js
+2026-02-09T22:35:11.636+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /api-docs/swagger-config
+2026-02-09T22:35:11.655+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:11.655+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /api-docs/swagger-config
+2026-02-09T22:35:12.020+05:30 DEBUG 14552 --- [sneakerhub-backend] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api-docs/swagger-config
+2026-02-09T22:35:12.053+05:30 DEBUG 14552 --- [sneakerhub-backend] [io-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:12.054+05:30 DEBUG 14552 --- [sneakerhub-backend] [io-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api-docs/swagger-config
+2026-02-09T22:35:12.195+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api-docs
+2026-02-09T22:35:12.197+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:12.198+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api-docs
+2026-02-09T22:35:17.463+05:30  INFO 14552 --- [sneakerhub-backend] [nio-8080-exec-2] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 5063 ms
+2026-02-09T22:35:17.530+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api-docs
+2026-02-09T22:35:17.531+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-02-09T22:35:17.532+05:30 DEBUG 14552 --- [sneakerhub-backend] [nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api-docs

@@ -1,0 +1,20 @@
+﻿
+> frontend@0.0.0 dev
+> vite
+
+[2m10:39:20 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m Re-optimizing dependencies because lockfile has changed
+
+  [32m[1mVITE[22m v7.3.1[39m  [2mready in [0m[1m2249[22m[2m[0m ms[22m
+
+  [32mΓ₧£[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32mΓ₧£[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m[32m  Γ₧£[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[2m10:42:07 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2mindex.html[22m
+[2m10:42:11 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mΓ£¿ new dependencies optimized: [33mreact, react-dom/client, react-router-dom, lucide-react[32m[39m
+[2m10:42:12 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mΓ£¿ new dependencies optimized: [33maxios[32m[39m
+[2m10:42:12 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mΓ£¿ optimized dependencies changed. reloading[39m
+[2m10:42:48 pm[22m [36m[1m[vite][22m[39m changed tsconfig file detected: C:/Users/vaibh/OneDrive/Desktop/SNEAKERS/frontend/tsconfig.json - Clearing cache and forcing full-reload to ensure TypeScript is compiled with updated config values.
+[2m10:42:48 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/main.ts[22m
+[2m10:42:48 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/counter.ts[22m
+[2m10:42:48 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/style.css[22m
+[2m10:42:48 pm[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mpage reload [39m[2msrc/typescript.svg[22m

@@ -1,0 +1,144 @@
+﻿[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+node.exe : [33mnode_modules
+/react-router/dist/developme
+nt/index.mjs (11:0): Module 
+level directives cause 
+errors when bundled, "use 
+client" in "node_modules/rea
+ct-router/dist/development/i
+ndex.mjs" was ignored.[39m
+At C:\Program 
+Files\nodejs\npx.ps1:29 
+char:3
++   & $NODE_EXE $NPX_CLI_JS 
+$args
++   ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
+    + CategoryInfo          
+    : NotSpecified: ([33m  
+  node_modul...s ignored.   
+ [39m:String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+[33mnode_modules/react-rout
+er/dist/development/dom-expo
+rt.mjs (1:0): Module level 
+directives cause errors 
+when bundled, "use client" 
+in "node_modules/react-route
+r/dist/development/dom-expor
+t.mjs" was ignored.[39m
+Error: Cannot apply unknown 
+utility class 
+`border-border`
+    at onInvalidCandidate (C
+:\Users\vaibh\OneDrive\Deskt
+op\SNEAKERS\frontend\node_mo
+dules\tailwindcss\dist\lib.j
+s:21:1511)
+    at Te (C:\Users\vaibh\On
+eDrive\Desktop\SNEAKERS\fron
+tend\node_modules\tailwindcs
+s\dist\lib.js:16:36652)
+    at C:\Users\vaibh\OneDri
+ve\Desktop\SNEAKERS\frontend
+\node_modules\tailwindcss\di
+st\lib.js:21:355
+    at Rr (C:\Users\vaibh\On
+eDrive\Desktop\SNEAKERS\fron
+tend\node_modules\tailwindcs
+s\dist\lib.js:3:1718)
+    at _ (C:\Users\vaibh\One
+Drive\Desktop\SNEAKERS\front
+end\node_modules\tailwindcss
+\dist\lib.js:3:1377)
+    at $e (C:\Users\vaibh\On
+eDrive\Desktop\SNEAKERS\fron
+tend\node_modules\tailwindcs
+s\dist\lib.js:21:172)
+    at un (C:\Users\vaibh\On
+eDrive\Desktop\SNEAKERS\fron
+tend\node_modules\tailwindcs
+s\dist\lib.js:38:294)
+    at async cn (C:\Users\va
+ibh\OneDrive\Desktop\SNEAKER
+S\frontend\node_modules\tail
+windcss\dist\lib.js:38:631)
+    at async Xr (C:\Users\va
+ibh\OneDrive\Desktop\SNEAKER
+S\frontend\node_modules\@tai
+lwindcss\node\dist\index.js:
+10:3417)
+    at async I (C:\Users\vai
+bh\OneDrive\Desktop\SNEAKERS
+\frontend\node_modules\@tail
+windcss\postcss\dist\index.j
+s:10:3977)
+[32mΓ£ô[39m 1031 modules transformed.
+[31mΓ£ù[39m Build failed 
+in 1.32s
+[31merror during build:
+[31m[vite:css] [postcss] 
+tailwindcss: C:/Users/vaibh/
+OneDrive/Desktop/SNEAKERS/fr
+ontend/src/index.css:1:1: 
+Cannot apply unknown 
+utility class 
+`border-border`[31m
+file: [36mC:/Users/vaibh/On
+eDrive/Desktop/SNEAKERS/fron
+tend/src/index.css:1:0[31m
+    at Input.error (C:\Users
+\vaibh\OneDrive\Desktop\SNEA
+KERS\frontend\node_modules\p
+ostcss\lib\input.js:135:16)
+    at Root.error (C:\Users\
+vaibh\OneDrive\Desktop\SNEAK
+ERS\frontend\node_modules\po
+stcss\lib\node.js:146:32)
+    at Object.Once (C:\Users
+\vaibh\OneDrive\Desktop\SNEA
+KERS\frontend\node_modules\@
+tailwindcss\postcss\dist\ind
+ex.js:10:6911)
+    at async 
+LazyResult.runAsync (C:\User
+s\vaibh\OneDrive\Desktop\SNE
+AKERS\frontend\node_modules\
+postcss\lib\lazy-result.js:2
+93:11)
+    at async runPostCSS (fil
+e:///C:/Users/vaibh/OneDrive
+/Desktop/SNEAKERS/frontend/n
+ode_modules/vite/dist/node/c
+hunks/config.js:30145:19)
+    at async compilePostCSS 
+(file:///C:/Users/vaibh/OneD
+rive/Desktop/SNEAKERS/fronte
+nd/node_modules/vite/dist/no
+de/chunks/config.js:30129:6)
+    at async compileCSS (fil
+e:///C:/Users/vaibh/OneDrive
+/Desktop/SNEAKERS/frontend/n
+ode_modules/vite/dist/node/c
+hunks/config.js:30059:26)
+    at async Object.handler 
+(file:///C:/Users/vaibh/OneD
+rive/Desktop/SNEAKERS/fronte
+nd/node_modules/vite/dist/no
+de/chunks/config.js:29592:54
+)
+    at async transform (file
+:///C:/Users/vaibh/OneDrive/
+Desktop/SNEAKERS/frontend/no
+de_modules/rollup/dist/es/sh
+ared/node-entry.js:21246:16)
+    at async ModuleLoader.ad
+dModuleSource (file:///C:/Us
+ers/vaibh/OneDrive/Desktop/S
+NEAKERS/frontend/node_module
+s/rollup/dist/es/shared/node
+-entry.js:21474:36)[39m
