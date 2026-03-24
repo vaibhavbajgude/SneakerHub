@@ -88,7 +88,8 @@ const authService = {
      * Initiate Google OAuth login
      */
     loginWithGoogle: () => {
-        window.location.href = 'https://sneakerhub-jfrs.onrender.com/oauth2/authorization/google';
+        const baseUrl = api.defaults.baseURL.replace('/api', '');
+        window.location.href = `${baseUrl}/oauth2/authorization/google`;
     },
 };
 
